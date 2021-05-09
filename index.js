@@ -21,7 +21,7 @@ const generateHTML = (answers) =>
     <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">${answers.name}</h5>
-      <h6 class="card-title">${answers.title}</h6>
+      <h6 class="card-title">Manager</h6>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID:${answers.id}</li>
@@ -66,18 +66,7 @@ inquirer
     {
       type: "input",
       name: "name",
-      message: "What is the team member name",
-    },
-    {
-      type: "list",
-      name: "title",
-      message: "Choose the title of the team members",
-      choices: [
-        "Software Engineer",
-        "Project Manager",
-        "Account Manager",
-        "Data Scientist",
-      ]
+      message: "What is your team manager's name?",
     },
     {
       type: "input",
@@ -97,21 +86,22 @@ inquirer
       message: "Please enter your email: "
     },
     {
+      type: "list",
+      name: "title2",
+      message: "What type of team member would you like to add?",
+      choices: [
+        "Software Engineer",
+        "Project Manager",
+        "Intern",
+        "Data Scientist",
+      ]
+    },
+    {
       type: "input",
       name: "name2",
       message: "What is your second team member name",
     },
-    {
-      type: "list",
-      name: "title2",
-      message: "Choose the title of the team members",
-      choices: [
-        "Software Engineer",
-        "Project Manager",
-        "Account Manager",
-        "Data Scientist",
-      ]
-    },
+   
     {
       type: "input",
       name: "id2",
@@ -128,21 +118,23 @@ inquirer
       name: "email2",
       message: "Please enter your email: "
     },
+
+    {
+      type: "list",
+      name: "title3",
+      message: "What type of team member would you like to add?",
+      choices: [
+        "Software Engineer",
+        "Project Manager",
+        "Intern",
+        "Data Scientist",
+      ]
+    },
+
     {
       type: "input",
       name: "name3",
       message: "What is your third team member name",
-    },
-    {
-      type: "list",
-      name: "title3",
-      message: "Choose the title of the team members",
-      choices: [
-        "Software Engineer",
-        "Project Manager",
-        "Account Manager",
-        "Data Scientist",
-      ]
     },
     {
       type: "input",
