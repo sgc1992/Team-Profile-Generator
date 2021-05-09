@@ -11,16 +11,17 @@ const generateHTML = (answers) =>
   <title>Document</title>
 </head>
 <body>
+
 <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title">${answers.name}</h5>
+    <h6 class="card-title">${answers.title}</h6>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">ID:${answers.id}</li>
+    <li class="list-group-item" href="#" class="card-link">Email:${answers.email}</li>
+    <li class="list-group-item"href="#" class="card-link">${answers.github}</li>
   </ul>
   <div class="card-body">
     <a href="#" class="card-link">Card link</a>
@@ -28,17 +29,12 @@ const generateHTML = (answers) =>
   </div>
 </div>
 
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My n${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-    </ul>
-  </div>
-</div>
+${answers.name}
+${answers.title}
+${answers.id}
+${answers.email}
+${answers.github}
+
 </body>
 </html>`;
 
@@ -47,17 +43,17 @@ inquirer
     {
       type: "input",
       name: "name",
-      message: "What is the team manager's name",
+      message: "What is the team member name",
   },
   {
       type: "input",
-      name: "location",
-      message: "Write a summary of the project: "
+      name: "title",
+      message: "What is the title? "
   },
   {
       type: "input",
-      name: "github",
-      message: "What command should be run to install dependencies: ",
+      name: "id",
+      message: "What is the id ",
   },
   {
       type: "list",
@@ -73,16 +69,10 @@ inquirer
           "Open"
       ]
   },
-
-  {
-      type: "input",
-      name: "tests",
-      message: "What command should be run to run tests?"
-  },
  
   {
       type: "input",
-      name: "username",
+      name: "github",
       message: "Please enter your GitHub username: "
   },
   {
