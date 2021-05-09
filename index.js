@@ -15,39 +15,48 @@ const generateHTML = (answers) =>
     My Team
   </nav>
 
-
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">${answers.name}</h5>
-    <h6 class="card-title">${answers.title}</h6>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">${answers.name}</h5>
+      <h6 class="card-title">${answers.title}</h6>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">ID:${answers.id}</li>
+      <li><a href="mailto:" class="card-link">Email:${answers.email}</a></li>
+      <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github}</a></li>
+    </ul>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">ID:${answers.id}</li>
-    <li><a href="mailto:" class="card-link">Email:${answers.email}</a></li>
-    <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github}</a></li>
-  </ul>
-</div>
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">${answers.name2}</h5>
-    <h6 class="card-title">${answers.title2}</h6>
+    </div>
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">${answers.name2}</h5>
+      <h6 class="card-title">${answers.title2}</h6>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">ID:${answers.id2}</li>
+      <li><a href="mailto:" class="card-link">Email:${answers.email2}</a></li>
+      <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github2}</a></li>
+    </ul>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">ID:${answers.id2}</li>
-    <li><a href="mailto:" class="card-link">Email:${answers.email2}</a></li>
-    <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github2}</a></li>
-  </ul>
-</div>
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">${answers.name3}</h5>
-    <h6 class="card-title">${answers.title3}</h6>
+    </div>
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">${answers.name3}</h5>
+      <h6 class="card-title">${answers.title3}</h6>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">ID:${answers.id3}</li>
+      <li><a href="mailto:" class="card-link">Email:${answers.email3}</a></li>
+      <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github3}</a></li>
+    </ul>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">ID:${answers.id3}</li>
-    <li><a href="mailto:" class="card-link">Email:${answers.email3}</a></li>
-    <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github3}</a></li>
-  </ul>
+    </div>
+  </div>
 </div>
 </body>
 </html>`;
