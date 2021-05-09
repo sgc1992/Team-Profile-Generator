@@ -11,6 +11,14 @@ const generateHTML = (answers) =>
   <title>Document</title>
 </head>
 <body>
+<nav class="navbar navbar-dark bg-primary">
+    My Team
+  </nav>
+<nav class="navbar navbar-red bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My Team</a>
+  </div>
+</nav>
 
 <div class="card" style="width: 18rem;">
   <div class="card-body">
