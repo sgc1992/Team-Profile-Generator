@@ -19,15 +19,10 @@ const generateHTML = (answers) =>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">ID:${answers.id}</li>
+    <li><a href="mailto:" class="card-link">Email:${answers.email}</a></li>
+    <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github}</a></li>
   </ul>
 </div>
-<div class="card-body">
-    <a href="#" class="card-link">Email:${answers.email}</a>
-  </div>
-  <div class="card-body">
-    <a href="#" class="card-link">Github Username:${answers.github}</a>
-  </div>
-
 </body>
 </html>`;
 
@@ -39,29 +34,22 @@ inquirer
       message: "What is the team member name",
     },
     {
-      type: "input",
+      type: "list",
       name: "title",
-      message: "What is the title? "
+      message: "Choose the title of the team members",
+      choices: [
+        "Software Engineer",
+        "Project Manager",
+        "Account Manager",
+        "Data Scientist",
+      ]
     },
     {
       type: "input",
       name: "id",
       message: "What is the id ",
     },
-    {
-      type: "list",
-      name: "license",
-      message: "Choose the appropriate license for this project: ",
-      choices: [
-        "Apache",
-        "Academic",
-        "GNU",
-        "ISC",
-        "MIT",
-        "Mozilla",
-        "Open"
-      ]
-    },
+  
 
     {
       type: "input",
