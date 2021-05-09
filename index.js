@@ -11,9 +11,26 @@ const generateHTML = (answers) =>
   <title>Document</title>
 </head>
 <body>
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
+    <h1 class="display-4">Hi! My n${answers.name}</h1>
     <p class="lead">I am from ${answers.location}.</p>
     <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
@@ -29,17 +46,17 @@ inquirer
   .prompt([
     {
       type: "input",
-      name: "projectTitle",
-      message: "What is the title of the project?",
+      name: "name",
+      message: "What is the team manager's name",
   },
   {
       type: "input",
-      name: "summary",
+      name: "location",
       message: "Write a summary of the project: "
   },
   {
       type: "input",
-      name: "installation",
+      name: "github",
       message: "What command should be run to install dependencies: ",
   },
   {
