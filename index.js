@@ -90,10 +90,10 @@ inquirer
       name: "title2",
       message: "What type of team member would you like to add?",
       choices: [
-        "Software Engineer",
-        "Project Manager",
+        "Employee",
+        "Manager",
+        "Engineer",
         "Intern",
-        "Data Scientist",
       ]
     },
     {
@@ -101,7 +101,7 @@ inquirer
       name: "name2",
       message: "What is your second team member name",
     },
-   
+
     {
       type: "input",
       name: "id2",
@@ -124,10 +124,10 @@ inquirer
       name: "title3",
       message: "What type of team member would you like to add?",
       choices: [
-        "Software Engineer",
-        "Project Manager",
+        "Employee",
+        "Manager",
+        "Engineer",
         "Intern",
-        "Data Scientist",
       ]
     },
 
