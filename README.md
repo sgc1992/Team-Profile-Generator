@@ -9,3 +9,5 @@ and all of the tests passing. You’ll need to submit a link to the video AND ad
 Link to Git Hub and Walk Through Video
 https://github.com/sgc1992/Team-Profile-Generator
 https://drive.google.com/file/d/1WZnHLG_BhpHXAk-8XSD8hZNrVbgq1VMz/view
+Test Video link
+https://drive.google.com/file/d/1k2pyjtW5Ex_wb57NCeMZN-fCGdv48Xvu/view
