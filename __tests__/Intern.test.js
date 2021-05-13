@@ -4,12 +4,12 @@ describe("Intern", () => {
   describe("Initialisation", () => {
     it("Sets the expected properties", () => {
       // Arrange
-      const intern = new Intern("name", "id", "email", "getschool");
+      const intern = new Intern("name", "id", "email", "school");
       const expectedIntern = {
         name: "name",
         id: "id",
         email: "email",
-        getschool: "getschool"
+        schoolName: "school"
       };
 
       // Act
@@ -21,12 +21,12 @@ describe("Intern", () => {
 
   describe("Methods", () => {
     it("Methods return the expected values", () => {
-      const intern = new Intern("name", "id", "email", "getschool");
+      const intern = new Intern("name", "id", "email", "school");
 
       expect(intern.getName()).toBe("name");
       expect(intern.getId()).toBe("id");
       expect(intern.getEmail()).toBe("email");
-      expect(intern.getGetschool()).toBe("getschool");
+      expect(intern.getSchool()).toBe("school");
       expect(intern.getRole()).toBe("Intern");
     })
   })

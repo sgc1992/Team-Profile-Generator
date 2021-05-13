@@ -9,7 +9,7 @@ describe("Engineer", () => {
         name: "name",
         id: "id",
         email: "email",
-        github: "github"
+        gitHub: "github"
       };
 
       // Act
@@ -26,7 +26,7 @@ describe("Engineer", () => {
       expect(engineer.getName()).toBe("name");
       expect(engineer.getId()).toBe("id");
       expect(engineer.getEmail()).toBe("email");
-      expect(engineer.getGithub()).toBe("github");
+      expect(engineer.getGitHub()).toBe("github");
       expect(engineer.getRole()).toBe("Engineer");
     })
   })

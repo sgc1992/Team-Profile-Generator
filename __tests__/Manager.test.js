@@ -4,12 +4,12 @@ describe("Manager", () => {
   describe("Initialisation", () => {
     it("Sets the expected properties", () => {
       // Arrange
-      const manager = new Manager("name", "id", "email", "getofficenumber");
+      const manager = new Manager("name", "id", "email", "officenumber");
       const expectedManager = {
         name: "name",
         id: "id",
         email: "email",
-        getofficenumber: "getofficenumber"
+        officeNum: "officenumber"
       };
 
       // Act
@@ -21,12 +21,12 @@ describe("Manager", () => {
 
   describe("Methods", () => {
     it("Methods return the expected values", () => {
-      const manager = new Manager("name", "id", "email", "getofficenumber");
+      const manager = new Manager("name", "id", "email", "officenumber");
 
       expect(manager.getName()).toBe("name");
       expect(manager.getId()).toBe("id");
       expect(manager.getEmail()).toBe("email");
-      expect(manager.getGetofficenumber()).toBe("getofficenumber");
+      expect(manager.getOfficeNumber()).toBe("officenumber");
       expect(manager.getRole()).toBe("Manager");
     })
   })
