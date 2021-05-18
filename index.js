@@ -25,7 +25,7 @@ const generateHTML = (answers) =>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID:${answers.id}</li>
-      <li><a href="mailto:" class="card-link">Email:${answers.email}</a></li>
+      <li><a href="mailto:${answers.email}" class="card-link">Email:${answers.email}</a></li>
       <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github}</a></li>
     </ul>
   </div>
@@ -38,7 +38,7 @@ const generateHTML = (answers) =>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID:${answers.id2}</li>
-      <li><a href="mailto:" class="card-link">Email:${answers.email2}</a></li>
+      <li><a href="mailto:${answers.email}" class="card-link">Email:${answers.email2}</a></li>
       <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github2}</a></li>
     </ul>
   </div>
@@ -51,7 +51,7 @@ const generateHTML = (answers) =>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">ID:${answers.id3}</li>
-      <li><a href="mailto:" class="card-link">Email:${answers.email3}</a></li>
+      <li><a href="mailto:${answers.email}" class="card-link">Email:${answers.email3}</a></li>
       <li><a href="https://github.com/sgc1992" class="card-link">Github Username:${answers.github3}</a></li>
     </ul>
   </div>
